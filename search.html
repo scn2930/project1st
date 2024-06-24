@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <title>Roll & Play</title>
+</head>
+<body>
+  <header>
+    <div class="header_wrap">
+      <div class="header_left">
+        <h1>
+          <a href="./index.html">
+            <img src="./img/logo_only.png" alt="로고">
+          </a>
+        </h1>
+      </div>
+      <div class="header_right">
+        <form action="search" method="post">
+          <input type="text" id="header_search_bar" name="board_name">
+          <img src="" alt="">
+        </form>
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <div class="select_wrap">
+      <div class="select">
+        <div class="select_people">
+          <span>인원</span>
+          <button class="people_count" data-filter="two">2인</button>
+          <button class="people_count" data-filter="three">3인</button>
+          <button class="people_count" data-filter="four">4인</button>
+          <button class="people_count" data-filter="five">5인</button>
+          <button class="people_count" data-filter="six">6인</button>
+          <button class="people_count" data-filter="seven">7인</button>
+          <button class="people_count" data-filter="eight">8인</button>
+        </div>
+        <div class="select_second">
+          <div class="select_level">
+            <span>난이도</span>
+            <button class="level">EASY</button>
+            <button class="level">NORMAL</button>
+            <button class="level">HARD</button>
+          </div>
+          <div class="select_genre">
+            <label for="genre">장르</label>
+            <select name="genre" id="board_genre">
+              <option value="guess">추리</option>
+              <option value="family">가족</option>
+              <option value="card">카드</option>
+              <option value="mind">심리</option>
+              <option value="strategy">전략</option>
+              <option value="speed">순발력</option>
+              <option value="puzzle">퍼즐</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="games">
+      <ul>
+        <li class = "two">2인</li>
+        <li class = "three">3인</li>
+        <li class = "four">4인</li>
+        <li class = "five">5인</li>
+        <li class = "six">6인</li>
+        <li class = "seven">7인</li>
+        <li class = "eight">8인</li>
+      </ul>
+    </div>
+
+
+  </main>
+<script src="./js/search.js"></script>
+</body>
+</html>
