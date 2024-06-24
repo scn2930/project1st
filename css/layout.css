@@ -53,6 +53,9 @@ section {
     /* border: 1.5px solid #FFD755; */
     /* background-color: blueviolet; */
 }
+.games{
+    cursor: pointer;
+}
 
 .game_name, .game_name_en {
     width: 280px;
@@ -82,6 +85,45 @@ section {
     width: 580px;
     height: 580px;
     float: left;
+}
+
+/* click */
+.game_details {
+    display: none;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+
+.game_info {
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.game_info img {
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.game_info .info {
+    max-width: 500px;
+}
+#game_time {
+    color:aqua;
+}
+
+.left {
+    float:left;
+}
+
+#game-difficulty {
+    margin-right: 40px;
 }
 
 
