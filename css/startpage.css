@@ -1,26 +1,38 @@
 @charset "utf-8";
 
-#logo img{
+#logo {
+    position: absolute;
+    top: 50px; /* 적절한 위치로 조정 */
+    left: 50px; /* 적절한 위치로 조정 */
+    z-index: 1; /* 다른 요소보다 위에 위치하도록 설정 */
+}
+
+#logo img {
+    /* 이미지 스타일링 */
     /* width: 100px;
     height: 100px;
     border: 1px solid black; */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto; /* 이미지를 가운데 정렬 */
 }
 
 #searchArea{
-    width: 560px;
+    width: 1200px;
     height: 300px;
     margin: 0 auto;
     padding: 0;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
-    top : 100px;
+    top : 200px;
     display: flex;
     justify-content: center;
     
 }
 #searchArea #allSearchArea{
-    width: 500px;
-    height: 70px;
+    width: 800px;
+    height: 60px;
     margin: 0 auto;
     padding: 0;
     /* background-color: pink; */
@@ -31,9 +43,9 @@
 }
 
 #searchArea #allSearchArea .searchText{
-    width: 460px;
-    height: 70px;
-    padding: 1px 20px;
+    width: 780px;
+    height: 50px;
+    padding: 1px 20px 2px 20px;
     border: 3px solid #FFD755;
     font-size: 1.5em;
     font-weight: 600;
@@ -54,13 +66,13 @@
 
 #searchArea button.searchBtn{
     width: 100px;
-    height: 70px;
+    height: 50px;
     border: 1px solid white;
     border-radius: 0 60px 60px 0;
     margin: 0;
     position: absolute;
     top : 3px;
-    right: 0;
+    right: -10px;
     background-color: white;
     color: white;
     
@@ -78,24 +90,27 @@
     justify-content: center;
 }
 #searchArea #conditionSearchArea a{
-    width: 370px;
-    height: 150px;
+    width: 450px;
+    height: 50px;
     border-radius: 50px;
-    background-color: white;
-    border: 3px solid #FFD755;
+    color: white;
+    /* background-color: white; */
+    /* border: 3px solid #FFD755; */
     font-weight: 600;
     font-family: "Noto Sans KR", sans-serif;
     position: absolute;
     top : 0px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    transition: border-color 0.3s;
 }
-#searchArea #conditionSearchArea a:hover{
+/* #searchArea #conditionSearchArea a:hover{
     background-color: gold;
     color: white;
     font-weight: blod;
-}
+    border-color: black;
+} */
 a:link{
     text-decoration: none;
     color: inherit;
@@ -110,17 +125,24 @@ a:visited{
     overflow: hidden;
 } */
 #backGoundImg{
-    width: 1280px;
-    height: 450px;
-    margin: 0 10px;
-    position: absolute;
-    top : 100px;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+    position: fixed;
+    top : 50%;
+    left : 50%;
+    right : 0;
+    transform: translate(-50%, -50%);
     /* transform: translate(-50%); */
     display: flex;
     /* align-items: center; */
     justify-content: center;
     /* background-color: blueviolet; */
-    animation: changeBg 5s infinite;
+    background-size: cover; /* Ensures the background image covers the element */
+    background-position: center; /* Centers the background image */
+    animation: changeBg 15s infinite;
+    filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
+    border: none;
 }
  
 @keyframes changeBg{
