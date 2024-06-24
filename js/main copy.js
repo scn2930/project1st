@@ -144,7 +144,7 @@ document.querySelectorAll('.game-card').forEach(card => {
                 <img src="${gameInfo.imgSrc}" alt="${gameInfo.title}">
                 <div class="info">
                     <h1>${gameInfo.title}</h1>
-                    <p>${gameInfo.description}</p>
+                    <p class="ex">${gameInfo.description}</p>
                     <p class="left"><strong>난이도:</strong> ${gameInfo.difficulty}</p>
                     <p class="left"><strong>인원:</strong> ${gameInfo.players}</p>
                     <p class="left"><strong>게임시간:</strong> ${gameInfo.time}</p>
