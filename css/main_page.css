@@ -13,7 +13,8 @@ html, body {
     height: 100%;
 }
 
-.wrapper {
+.wrapper {  
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
 }
@@ -61,6 +62,7 @@ main {
     height: 100px;
     padding: 10px;
     background-color: #ffd75552;
+    font-family: "Noto Sans KR", sans-serif;
   }
   .select_people{
     display: flex;
@@ -76,6 +78,7 @@ main {
     border: 1px solid black;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Noto Sans KR", sans-serif;
   }
   
   .select_second{
@@ -162,7 +165,7 @@ main {
     display: none;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    /* padding: 10px; */
     background-color: #fff7dd;
     align-items: center;
     margin-bottom: 20px;
@@ -174,8 +177,8 @@ main {
     display: flex;
     width: 70%;
     height: 70%;
-    background-color: ;
-    padding: 60px;
+    /* background-color: ; */
+    /* padding: 60px; */
     border-radius: 10px;
     
 }
@@ -183,13 +186,14 @@ main {
 .game-info img {
     width: 300px;
     height: 100%;
+    margin-left: -100px;
 }
 
 .close-btn {
     width: 50px;
     position: absolute;
-    top: 60px;
-    right: 220px;
+    top: 20px;
+    left: 1200px;
     background-color: transparent;
     border: none;
     font-size: 20px;
@@ -207,6 +211,7 @@ main {
 .info {
     margin: 0 auto;
     margin-top: 50px;
+    margin-left: 100px;
 }
 
 .info h1 {
@@ -229,12 +234,13 @@ main {
 .info p:nth-child(2) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
     font-size: 20px;
-    margin: 50px;
+    margin: 20px;
     margin-right: 10px;
 }
 
@@ -254,19 +260,24 @@ footer {
     margin-top: 50px;
 }
 
+.footer_wrap ul li {
+    float: left;
+}
+
 .footer_wrap ul li:nth-child(1) {
     margin: 35px;
+    /* line-height: 100px; */
 }
 
 .footer_wrap ul li:nth-child(2) {
     margin-top: 110px;
-    margin-left: 450px;
+    margin-left: 430px;
     font-family: "Noto Sans KR", sans-serif;
     text-align: center;
 }
 
 .footer_wrap ul li:nth-child(3) {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 105px;
 }
 
