@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- <script src="js/startpage.js"></script> -->
     <script>
         function searchResult(){
             
@@ -21,14 +23,35 @@
         <img src="/img/logo.png" alt="회사로고" class="logo">
     </a>
 </div>
+<div id="backImgage">
+    <!-- <article id="slider">
+        <div class="sliderWrap">
+            <div class="slider1"><span>이미지1</span></div>
+            <div class="slider2"><span>이미지2</span></div>
+            <div class="slider3"><span>이미지3</span></div>
+        </div>
+    </article> -->
+    
+</div>
 
 <div id="searchArea">
     <div id="allSearchArea">
         <form action="search" method="post">
+            <!-- <div id="resultBtn">
+                <a href="https://www.naver.com/" class="resultBtn">하하
+                    
+                </a>
+            </div> -->
             <input type="text" class="searchText" name="게임이름" placeholder="게임이름으로 검색" required autofocus>
-            <!-- <button type="submit" class="searchBtn" onclick="searchResult()">검색</button> -->
+            <button type="submit" class="searchBtn" onclick="searchResult()">
+                <img src="/img/icon/search.png" alt="">
+            </button>
+             
+            
+                
              
         </form>
+        
     </div>
 
     
