@@ -1,0 +1,547 @@
+/* media */
+@media only screen and (max-width: 1024px) {
+    /* games */
+    .wrapper {
+        max-width: 1024px;
+    }
+
+    .game-card img {
+        width: 200px;
+    }
+
+    .game-card p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .game-card p span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .game-details {
+        height: 300px;
+    }
+
+    .game-info img {
+        width: 200px;
+        height: 100%;
+        margin-left: ;
+    }
+
+    .close-btn {
+        top: 10px;
+        left: 820px;
+    }
+
+    .close-btn img {
+        width: 30px;
+    }
+
+    .info {
+        margin-top: 5px;
+    }
+
+    .info h1 {
+        font-size: 26px;
+    }
+
+    .info h1 span {
+        font-size: 16px;
+    }
+
+    .info p:nth-child(2) {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+        font-size: 16px;
+        margin: 15px;
+        margin-right: 10px;
+    }
+    
+    .info p strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
+    .footer_wrap ul li:nth-child(1) {
+        margin: px;
+        /* line-height: 100px; */
+    }
+
+    .footer_wrap ul li:nth-child(1) img {
+        width: 80%;
+    }
+    
+    .footer_wrap ul li:nth-child(2) {
+        margin-top: -30px;
+        margin-left: 510px;
+        font-size: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: center;
+    }
+    
+    .footer_wrap ul li:nth-child(3) {
+        margin-left: 900px;
+        margin-top: -40px;
+    }
+
+    .footer_wrap ul li:nth-child(3) a img {
+        width: 30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) {
+        margin-left: 940px;
+        margin-top: -40px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) a img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 1023px;
+        min-width: 768px;
+    }
+
+    .game-card img {
+        width: 150px;
+    }
+
+    .game-card p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .game-card p span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .game-details {
+        height: 300px;
+    }
+
+    .game-info img {
+        width: 150px;
+        height: 100%;
+        margin-left: 1px;
+    }
+
+    .close-btn {
+        top: 10px;
+        left: 510px;
+    }
+
+    .close-btn img {
+        width: 30px;
+    }
+
+    .left {
+        float: none;
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h1 span {
+        font-size: 16px;
+    }
+
+    .info p:nth-child(2) {
+        display: none;
+    }
+
+    .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+        font-size: 16px;
+        margin: 15px;
+        margin-right: 10px;
+    }
+    
+    .info p strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
+    .footer_wrap ul li:nth-child(1) {
+        margin: px;
+        /* line-height: 100px; */
+    }
+
+    .footer_wrap ul li:nth-child(1) img {
+        width: 70%;
+    }
+    
+    .footer_wrap ul li:nth-child(2) {
+        margin-top: -20px;
+        margin-left: 260px;
+        font-size: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: center;
+    }
+    
+    .footer_wrap ul li:nth-child(3) {
+        margin-left: 650px;
+        margin-top: -30px;
+    }
+
+    .footer_wrap ul li:nth-child(3) a img {
+        width: 30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) {
+        margin-left: 690px;
+        margin-top: -30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) a img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .wrapper {
+        max-width: 767px;
+        min-width: 480px;
+    }
+
+    .game-row {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+
+    .game-card img {
+        width: 150px;
+    }
+
+    .game-card p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .game-card p span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .game-details {
+        height: 600px;
+    }
+
+    .game-info {
+        flex-direction: column;
+    }
+
+    .game-info img {
+        width: 150px;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .close-btn {
+        top: 10px;
+        left: 220px;
+    }
+
+    .close-btn img {
+        width: 30px;
+    }
+
+    .left {
+        /* float: none; */
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h1 span {
+        font-size: 16px;
+    }
+
+    .info p:nth-child(2) {
+        display: none;
+    }
+
+    .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+        font-size: 16px;
+        margin: 10px;
+        margin-right: 0px;
+    }
+    
+    .info p strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
+    .footer_wrap ul li:nth-child(1) {
+        margin: px;
+        /* line-height: 100px; */
+    }
+
+    .footer_wrap ul li:nth-child(1) img {
+        width: 70%;
+    }
+    
+    .footer_wrap ul li:nth-child(2) {
+        display: none;
+    }
+    
+    .footer_wrap ul li:nth-child(3) {
+        margin-left: 395px;
+        margin-top: -30px;
+    }
+
+    .footer_wrap ul li:nth-child(3) a img {
+        width: 25px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) {
+        margin-left: 430px;
+        margin-top: -30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) a img {
+        width: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 1023px;
+        min-width: 768px;
+    }
+
+    .game-card img {
+        width: 150px;
+    }
+
+    .game-card p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .game-card p span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .game-details {
+        height: 300px;
+    }
+
+    .game-info img {
+        width: 150px;
+        height: 100%;
+        margin-left: 1px;
+    }
+
+    .close-btn {
+        top: 10px;
+        left: 510px;
+    }
+
+    .close-btn img {
+        width: 30px;
+    }
+
+    .left {
+        float: none;
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h1 span {
+        font-size: 16px;
+    }
+
+    .info p:nth-child(2) {
+        display: none;
+    }
+
+    .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+        font-size: 16px;
+        margin: 15px;
+        margin-right: 10px;
+    }
+    
+    .info p strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
+    .footer_wrap ul li:nth-child(1) {
+        margin: px;
+        /* line-height: 100px; */
+    }
+
+    .footer_wrap ul li:nth-child(1) img {
+        width: 70%;
+    }
+    
+    .footer_wrap ul li:nth-child(2) {
+        margin-top: -20px;
+        margin-left: 260px;
+        font-size: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: center;
+    }
+    
+    .footer_wrap ul li:nth-child(3) {
+        margin-left: 650px;
+        margin-top: -30px;
+    }
+
+    .footer_wrap ul li:nth-child(3) a img {
+        width: 30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) {
+        margin-left: 690px;
+        margin-top: -30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) a img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .wrapper {
+        max-width: 766px;
+    }
+
+    .game-row {
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+    }
+
+    .game-card img {
+        width: 150px;
+    }
+
+    .game-card p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .game-card p span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .game-details {
+        height: 600px;
+    }
+
+    .game-info {
+        flex-direction: column;
+    }
+
+    .game-info img {
+        width: 150px;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .close-btn {
+        top: 10px;
+        left: 220px;
+    }
+
+    .close-btn img {
+        width: 30px;
+    }
+
+    .left {
+        /* float: none; */
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h1 span {
+        font-size: 16px;
+    }
+
+    .info p:nth-child(2) {
+        display: none;
+    }
+
+    .info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+        font-size: 16px;
+        margin: 10px;
+        margin-right: 0px;
+    }
+    
+    .info p strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
+    .footer_wrap ul li:nth-child(1) {
+        margin: px;
+        /* line-height: 100px; */
+    }
+
+    .footer_wrap ul li:nth-child(1) img {
+        width: 70%;
+    }
+    
+    .footer_wrap ul li:nth-child(2) {
+        display: none;
+    }
+    
+    .footer_wrap ul li:nth-child(3) {
+        margin-left: 395px;
+        margin-top: -30px;
+    }
+
+    .footer_wrap ul li:nth-child(3) a img {
+        width: 25px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) {
+        margin-left: 430px;
+        margin-top: -30px;
+    }
+    
+    .footer_wrap ul li:nth-child(4) a img {
+        width: 25px;
+    }
+}
