@@ -158,3 +158,6 @@ document.querySelectorAll('.game-card').forEach(card => {
         });
     });
 });
+
+
+
