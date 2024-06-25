@@ -13,7 +13,8 @@ body {
     height: 100%;
 }
 
-.wrapper {
+.wrapper {  
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
 }
@@ -44,8 +45,6 @@ header {
 }
 
 .header_right form input {
-    /* 너비 기준이 뭘까? */
-    /* max-width: 80%; */
     width: 90%;
     height: 25px;
     margin-right: 1em;
@@ -75,9 +74,9 @@ main {
     height: 100px;
     padding: 10px;
     background-color: #ffd75552;
-}
-
-.select_people {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .select_people{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -92,6 +91,7 @@ main {
     border: 1px solid black;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Noto Sans KR", sans-serif;
     cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ main {
     display: none;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    /* padding: 10px; */
     background-color: #fff7dd;
     align-items: center;
     margin-bottom: 20px;
@@ -198,20 +198,20 @@ main {
     display: flex;
     width: 70%;
     height: 70%;
-    padding: 60px;
     border-radius: 10px;
 }
 
 .game-info img {
     width: 300px;
     height: 100%;
+    margin-left: -100px;
 }
 
 .close-btn {
     width: 50px;
     position: absolute;
-    top: 60px;
-    right: 220px;
+    top: 20px;
+    left: 1200px;
     background-color: transparent;
     border: none;
     font-size: 20px;
@@ -229,12 +229,12 @@ main {
 .info {
     margin: 0 auto;
     margin-top: 50px;
+    margin-left: 100px;
 }
 
 .info h1 {
     font-size: 34px;
     font-weight: 600;
-
 }
 
 .info h1 span {
@@ -251,14 +251,13 @@ main {
 .info p:nth-child(2) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.info p:nth-child(3),
-.info p:nth-child(4),
-.info p:nth-child(5) {
+.info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
     font-size: 20px;
-    margin: 50px;
+    margin: 20px;
     margin-right: 10px;
 }
 
@@ -278,19 +277,24 @@ footer {
     margin-top: 50px;
 }
 
+.footer_wrap ul li {
+    float: left;
+}
+
 .footer_wrap ul li:nth-child(1) {
     margin: 35px;
+    /* line-height: 100px; */
 }
 
 .footer_wrap ul li:nth-child(2) {
     margin-top: 110px;
-    margin-left: 450px;
+    margin-left: 430px;
     font-family: "Noto Sans KR", sans-serif;
     text-align: center;
 }
 
 .footer_wrap ul li:nth-child(3) {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 105px;
 }
 
