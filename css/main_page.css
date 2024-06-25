@@ -142,7 +142,14 @@ main {
     width: 25%;
     text-align: center;
 }
+/* select 버튼 눌렀을때 js로 활성화 */
+.active{
+    background-color: #FFD755 !important;
+}
 
+.filter_layout{
+
+}
 
 /* games */
 .games {
