@@ -23,3 +23,21 @@ for (let fp of filterPeople) {
   })
 
 }
+
+
+const logoImage = document.querySelector('h1 > a > img');
+
+function changeImageSource() {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        logoImage.src = './img/logo_only.png';
+    } else {
+      logoImage.src = '';
+        logoImage.src = "./img/logo.png";
+    }
+}
+
+// 페이지 로드시 초기 호출
+changeImageSource();
+
+// 브라우저 창 크기 변경 시 이미지 변경
+window.addEventListener('resize', changeImageSource);
