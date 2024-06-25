@@ -1,4 +1,8 @@
 @charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
 
 #logo {
     position: absolute;
@@ -65,17 +69,23 @@
 } */
 
 #searchArea button.searchBtn{
-    width: 100px;
-    height: 50px;
+    width: 20px;
+    height: 45px;
     border: 1px solid white;
-    border-radius: 0 60px 60px 0;
+    /* border-radius: 0 60px 60px 0; */
     margin: 0;
     position: absolute;
     top : 3px;
     right: -10px;
     background-color: white;
-    color: white;
+    /* color: white; */
+    transform: translateY(10%) translateX(-100%);
     
+}
+#searchArea button.searchBtn img{
+    width: 35px;
+    height: 35px;
+           
 }
 
 #searchArea #conditionSearchArea{
@@ -92,25 +102,24 @@
 #searchArea #conditionSearchArea a{
     width: 450px;
     height: 50px;
-    border-radius: 50px;
     color: white;
-    /* background-color: white; */
-    /* border: 3px solid #FFD755; */
     font-weight: 600;
     font-family: "Noto Sans KR", sans-serif;
     position: absolute;
     top : 0px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    transition: border-color 0.3s;
+    transition: border-color 1s;
 }
-/* #searchArea #conditionSearchArea a:hover{
+#searchArea #conditionSearchArea a:hover{
+    border-radius: 50px;
     background-color: gold;
-    color: white;
-    font-weight: blod;
+    border: 3px solid #FFD755;
+    color: black;
+    font-weight: 600;
     border-color: black;
-} */
+}
 a:link{
     text-decoration: none;
     color: inherit;
@@ -191,6 +200,480 @@ a:visited{
     background-color: coral;
     padding: 10px 20px;
 } */
+
+/* 태블릿 가로 기준 : 768px ~ 1023px */
+@media screen and (max-width:1023px) {
+    #logo {
+        position: absolute;
+        top: 30px; /* 적절한 위치로 조정 */
+        left: 30px; /* 적절한 위치로 조정 */
+        z-index: 1; /* 다른 요소보다 위에 위치하도록 설정 */
+    }
+    
+    #logo img {
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        margin: 0 auto; /* 이미지를 가운데 정렬 */
+    }
+    
+    #searchArea{
+        width: 900px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: blue;
+        position: relative;
+        top : 200px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        
+    }
+    #searchArea #allSearchArea{
+        width: 500px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: pink;
+        position: absolute;
+    }
+    
+    #searchArea #allSearchArea .searchText{
+        width: 460px;
+        height: 45px;
+        padding: 1px 20px 2px 20px;
+        border: 3px solid #FFD755;
+        font-size: 1.125em;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        border-radius: 50px;
+        margin: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        outline: none;
+    }
+    
+    #searchArea button.searchBtn{
+        width: 50px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 0 60px 60px 0;
+        margin: 0;
+        position: absolute;
+        top : 3px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        transform: translateY(10%) translateX(15%);
+        
+    }
+    #searchArea button.searchBtn img{
+        width: 32.5px;
+        height: 32.5px;
+    }
+    
+    #searchArea #conditionSearchArea{
+        width: 370px;
+        height: 150px;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top : 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #searchArea #conditionSearchArea a{
+        width: 300px;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        position: absolute;
+        top : 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 1s;
+        font-size: 0.925em;
+    }
+    #searchArea #conditionSearchArea a:hover{
+        border-radius: 50px;
+        background-color: gold;
+        border: 3px solid #FFD755;
+        color: black;
+        font-weight: 600;
+        border-color: black;
+    }
+    a:link{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #backGoundImg{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        top : 50%;
+        left : 50%;
+        right : 0;
+        transform: translate(-50%, -50%);
+        /* transform: translate(-50%); */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* background-color: blueviolet; */
+        background-size: cover; /* Ensures the background image covers the element */
+        background-position: center; /* Centers the background image */
+        animation: changeBg 15s infinite;
+        filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
+        border: none;
+    }
+     
+    @keyframes changeBg{
+        from{
+            background-image: url(/img/back/board-761586_1280.jpg);
+        }
+        75%{
+            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+        }
+        50%{
+            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+        }
+        25%{
+            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+        }
+        /* 100% */
+        to{
+            background-image: url(/img/back/game-3978841_1280.jpg);
+            /* 100px * 30% */
+            
+        }
+    }
+    }
+
+/* 모바일 가로, 태블릿 기준 : 480px ~ 767px */
+@media screen and (max-width:767px) {
+    #logo {
+        position: absolute;
+        top: 10px; /* 적절한 위치로 조정 */
+        left: -10px; /* 적절한 위치로 조정 */
+        z-index: 1; /* 다른 요소보다 위에 위치하도록 설정 */
+    }
+    
+    #logo img {
+        display: block;
+        max-width: 80%;
+        max-height: 100%;
+        margin: 0 auto; /* 이미지를 가운데 정렬 */
+    }
+    
+    #searchArea{
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 0;
+        /* background-color: blue; */
+        position: relative;
+        top : 200px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        
+    }
+    #searchArea #allSearchArea{
+        width: 500px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        /* background-color: pink; */
+        position: absolute;
+    }
+    
+    #searchArea #allSearchArea .searchText{
+        width: 460px;
+        height: 45px;
+        padding: 1px 20px 2px 20px;
+        border: 3px solid #FFD755;
+        font-size: 1.125em;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        border-radius: 50px;
+        margin: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        outline: none;
+    }
+    
+    #searchArea button.searchBtn{
+        width: 50px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 0 60px 60px 0;
+        margin: 0;
+        position: absolute;
+        top : 3px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        transform: translateY(10%) translateX(15%);
+        
+    }
+    #searchArea button.searchBtn img{
+        width: 32.5px;
+        height: 32.5px;
+    }
+    
+    #searchArea #conditionSearchArea{
+        width: 370px;
+        height: 150px;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top : 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #searchArea #conditionSearchArea a{
+        width: 300px;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        position: absolute;
+        top : 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 1s;
+        font-size: 0.925em;
+    }
+    #searchArea #conditionSearchArea a:hover{
+        border-radius: 50px;
+        background-color: gold;
+        border: 3px solid #FFD755;
+        color: black;
+        font-weight: 600;
+        border-color: black;
+    }
+    a:link{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #backGoundImg{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        top : 50%;
+        left : 50%;
+        right : 0;
+        transform: translate(-50%, -50%);
+        /* transform: translate(-50%); */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* background-color: blueviolet; */
+        background-size: cover; /* Ensures the background image covers the element */
+        background-position: center; /* Centers the background image */
+        animation: changeBg 15s infinite;
+        filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
+        border: none;
+    }
+     
+    @keyframes changeBg{
+        from{
+            background-image: url(/img/back/board-761586_1280.jpg);
+        }
+        75%{
+            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+        }
+        50%{
+            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+        }
+        25%{
+            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+        }
+        /* 100% */
+        to{
+            background-image: url(/img/back/game-3978841_1280.jpg);
+            /* 100px * 30% */
+            
+        }
+    }
+    }
+    /* 모바일 기준 : ~480px */
+    @media screen and (max-width:480px) {
+    #logo {
+        position: absolute;
+        top: 10px; /* 적절한 위치로 조정 */
+        left: -40px; /* 적절한 위치로 조정 */
+        z-index: 1; /* 다른 요소보다 위에 위치하도록 설정 */
+    }
+    
+    #logo img {
+         display: block;
+        max-width: 70%;
+        max-height: 100%;
+        margin: 0 auto; /* 이미지를 가운데 정렬 */
+    }
+    
+    #searchArea{
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 0;
+        /* background-color: blue; */
+        position: relative;
+        top : 200px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        
+    }
+    #searchArea #allSearchArea{
+        width: 390px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        /* background-color: pink; */
+        position: absolute;
+    }
+    
+    #searchArea #allSearchArea .searchText{
+        width: 350px;
+        height: 45px;
+        padding: 1px 20px 2px 20px;
+        border: 3px solid #FFD755;
+        font-size: 1.1em;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        border-radius: 50px;
+        margin: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        outline: none;
+    }
+    
+    #searchArea button.searchBtn{
+        width: 50px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 0 60px 60px 0;
+        margin: 0;
+        position: absolute;
+        top : 3px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        transform: translateY(10%) translateX(15%);
+        
+    }
+    #searchArea button.searchBtn img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #searchArea #conditionSearchArea{
+        width: 370px;
+        height: 150px;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+        position: absolute;
+        top : 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #searchArea #conditionSearchArea a{
+        width: 300px;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        font-family: "Noto Sans KR", sans-serif;
+        position: absolute;
+        top : 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 1s;
+        font-size: 0.9em;
+    }
+    #searchArea #conditionSearchArea a:hover{
+        border-radius: 50px;
+        background-color: gold;
+        border: 3px solid #FFD755;
+        color: black;
+        font-weight: 600;
+        border-color: black;
+    }
+    a:link{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #backGoundImg{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        top : 50%;
+        left : 50%;
+        right : 0;
+        transform: translate(-50%, -50%);
+        /* transform: translate(-50%); */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* background-color: blueviolet; */
+        background-size: cover; /* Ensures the background image covers the element */
+        background-position: center; /* Centers the background image */
+        animation: changeBg 15s infinite;
+        filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
+        border: none;
+    }
+     
+    @keyframes changeBg{
+        from{
+            background-image: url(/img/back/board-761586_1280.jpg);
+        }
+        75%{
+            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+        }
+        50%{
+            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+        }
+        25%{
+            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+        }
+        /* 100% */
+        to{
+            background-image: url(/img/back/game-3978841_1280.jpg);
+            /* 100px * 30% */
+            
+        }
+    }
+    }
+
 
 
 
