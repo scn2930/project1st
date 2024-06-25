@@ -28,7 +28,7 @@ for (let fp of filterPeople) {
 const logoImage = document.querySelector('h1 > a > img');
 
 function changeImageSource() {
-    if (window.matchMedia("(max-width: 400px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
         logoImage.src = './img/logo_only.png';
     } else {
       logoImage.src = '';
