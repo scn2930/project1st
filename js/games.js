@@ -201,21 +201,49 @@ function showGameDetails(item, gameData, numItemsPerRow) {
   });
 }
 
+function selectPeople(obj) {
+  let buttons = document.querySelectorAll(".people_count.active");
+  for (btn of buttons) {
+    btn.classList.remove("active");
+  }
+  obj.classList.add("active");
+  filterByPlayers(obj.getAttribute("data-filter"));
+
+  console.log();
+}
+// document.querySelectorAll(".people_count").addEventListener((event) => {
+//   button.classList.remove("active");
+
+//   console.log(event.currentTarget);
+
+//   //   const filter = event.target.getAttribute("data-filter");
+//   //   filterByPlayers(filter);
+// });
 // people_count 버튼에 대한 이벤트 리스너
-document.querySelectorAll(".people_count").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const filter = event.target.getAttribute("data-filter");
-    filterByPlayers(filter);
-  });
-});
+// document.querySelectorAll(".people_count").forEach((button) => {
+//   button.addEventListener("click", (event) => {
+//     button.classList.add("active");
+//   });
+// });
+
+function selectLevel(obj) {
+  let buttons = document.querySelectorAll(".level.active");
+  for (btn of buttons) {
+    btn.classList.remove("active");
+  }
+  obj.classList.add("active");
+  filterByLevel(obj.getAttribute("data-filter"));
+
+  console.log();
+}
 
 // level 버튼에 대한 이벤트 리스너
-document.querySelectorAll(".level").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const level = event.target.getAttribute("data-filter");
-    filterByLevel(level);
-  });
-});
+// document.querySelectorAll(".level").forEach((button) => {
+//   button.addEventListener("click", (event) => {
+//     const level = event.target.getAttribute("data-filter");
+//     filterByLevel(level);
+//   });
+// });
 
 // game선택했을때 아래나오는 위치, 개수 조정(반응형)
 document.querySelectorAll("#game-list li").forEach((item, index) => {
