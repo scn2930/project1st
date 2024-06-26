@@ -35,10 +35,10 @@
 
     <div id="searchArea">
         <div id="allSearchArea">
-            <form action="search" method="post">
-                <input type="text" class="searchText" name="게임이름" placeholder="게임이름으로 검색" required autofocus>
-                <button type="submit" class="searchBtn" onclick="searchResult()">
-                    <img src="/img/icon/search.png" alt="">
+            <form action="/main_page.html" method="get">
+                <input type="text" class="searchText" name="game" placeholder="게임이름으로 검색" required autofocus>
+                <button type="submit" class="searchBtn" onclick="filterGames()">
+                    <img src="/img/icon/search.png" alt="검색">
                 </button>
             </form>
         </div>
