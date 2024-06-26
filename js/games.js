@@ -181,8 +181,8 @@ document.querySelectorAll('#game-list li').forEach((item, index) => {
             showGameDetails(item, gameData, 2);
         }
     });
-});
 
+});
 
 window.addEventListener('resize', () => {
     const existingDetails = document.querySelector('.game-details');
@@ -190,7 +190,4 @@ window.addEventListener('resize', () => {
         existingDetails.remove();
     }
 });
-
-
-
 
