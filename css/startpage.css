@@ -147,8 +147,8 @@ a:visited{
     /* align-items: center; */
     justify-content: center;
     /* background-color: blueviolet; */
-    background-size: cover; /* Ensures the background image covers the element */
-    background-position: center; /* Centers the background image */
+    /*background-size: cover; /* Ensures the background image covers the element */
+    /*background-position: center; /* Centers the background image */
     animation: changeBg 15s infinite;
     filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
     border: none;
@@ -156,20 +156,20 @@ a:visited{
  
 @keyframes changeBg{
     from{
-        background-image: url(/img/back/board-761586_1280.jpg);
+        background-image: url(../img/back/board-761586_1280.jpg);
     }
     75%{
-        background-image: url(/img/back/monopoly-4706416_1280.jpg);
+        background-image: url(../img/back/monopoly-4706416_1280.jpg);
     }
     50%{
-        background-image: url(/img/back/checkmate-1511866_1280.jpg);
+        background-image: url(../img/back/checkmate-1511866_1280.jpg);
     }
     25%{
-        background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+        background-image: url(../img/back/tic-tac-toe-1777859_1280.jpg);
     }
     /* 100% */
     to{
-        background-image: url(/img/back/game-3978841_1280.jpg);
+        background-image: url(../img/back/game-3978841_1280.jpg);
         /* 100px * 30% */
         
     }
@@ -339,20 +339,20 @@ a:visited{
      
     @keyframes changeBg{
         from{
-            background-image: url(/img/back/board-761586_1280.jpg);
+            background-image: url(../img/back/board-761586_1280.jpg);
         }
         75%{
-            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+            background-image: url(../img/back/monopoly-4706416_1280.jpg);
         }
         50%{
-            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+            background-image: url(../img/back/checkmate-1511866_1280.jpg);
         }
         25%{
-            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+            background-image: url(../img/back/tic-tac-toe-1777859_1280.jpg);
         }
         /* 100% */
         to{
-            background-image: url(/img/back/game-3978841_1280.jpg);
+            background-image: url(../img/back/game-3978841_1280.jpg);
             /* 100px * 30% */
             
         }
@@ -497,20 +497,20 @@ a:visited{
      
     @keyframes changeBg{
         from{
-            background-image: url(/img/back/board-761586_1280.jpg);
+            background-image: url(../img/back/board-761586_1280.jpg);
         }
         75%{
-            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+            background-image: url(../img/back/monopoly-4706416_1280.jpg);
         }
         50%{
-            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+            background-image: url(../img/back/checkmate-1511866_1280.jpg);
         }
         25%{
-            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+            background-image: url(../img/back/tic-tac-toe-1777859_1280.jpg);
         }
         /* 100% */
         to{
-            background-image: url(/img/back/game-3978841_1280.jpg);
+            background-image: url(../img/back/game-3978841_1280.jpg);
             /* 100px * 30% */
             
         }
@@ -654,20 +654,20 @@ a:visited{
      
     @keyframes changeBg{
         from{
-            background-image: url(/img/back/board-761586_1280.jpg);
+            background-image: url(../img/back/board-761586_1280.jpg);
         }
         75%{
-            background-image: url(/img/back/monopoly-4706416_1280.jpg);
+            background-image: url(../img/back/monopoly-4706416_1280.jpg);
         }
         50%{
-            background-image: url(/img/back/checkmate-1511866_1280.jpg);
+            background-image: url(../img/back/checkmate-1511866_1280.jpg);
         }
         25%{
-            background-image: url(/img/back/tic-tac-toe-1777859_1280.jpg);
+            background-image: url(../img/back/tic-tac-toe-1777859_1280.jpg);
         }
         /* 100% */
         to{
-            background-image: url(/img/back/game-3978841_1280.jpg);
+            background-image: url(../img/back/game-3978841_1280.jpg);
             /* 100px * 30% */
             
         }
