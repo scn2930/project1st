@@ -144,11 +144,11 @@ a:visited{
     transform: translate(-50%, -50%);
     /* transform: translate(-50%); */
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     /* background-color: blueviolet; */
-    /*background-size: cover; /* Ensures the background image covers the element */
-    /*background-position: center; /* Centers the background image */
+    background-size: cover; /* Ensures the background image covers the element */
+    background-position: center; /* Centers the background image */
     animation: changeBg 15s infinite;
     filter: brightness(50%) blur(0px); /* 밝기를 50%로 줄이고 흐림 효과 적용 */
     border: none;
