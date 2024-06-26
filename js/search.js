@@ -88,11 +88,10 @@ function filterGames() {
     } else {
         filterCriteria.innerHTML = '';
     }
-
 }
 
 document.getElementById('header_search_bar').addEventListener('input', filterGames);
-=======
+
   });
 }
 
