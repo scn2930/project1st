@@ -13,7 +13,7 @@ body {
     height: 100%;
 }
 
-.wrapper {  
+.wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -77,8 +77,9 @@ main {
     padding: 10px;
     background-color: #ffd75552;
     font-family: "Noto Sans KR", sans-serif;
-  }
-  .select_people{
+}
+
+.select_people {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -152,6 +153,9 @@ main {
 #game-list {
     max-width: 1440px;
     margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 li {
@@ -233,7 +237,9 @@ li {
     margin-bottom: 30px;
 }
 
-.info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+.info p:nth-child(3),
+.info p:nth-child(4),
+.info p:nth-child(5) {
     font-size: 1.1em;
     margin: 20px;
 }

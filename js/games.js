@@ -1,6 +1,6 @@
 const gameData = {
   splendor: {
-    title: "스플렌더<span>Splendor</span>",
+    title: "스플렌더<br><span>Splendor</span>",
     description:
       "2015년 판매량 1위에 빛나는 <br> 보석칩으로 카드를 사서 모으는 극강의 두뇌꿀잼게임",
     difficulty: "Hard",
@@ -10,7 +10,7 @@ const gameData = {
     minPeople: "2",
   },
   "davinci-code": {
-    title: "다빈치코드<span>DaVinci Code</span>",
+    title: "다빈치코드<br><span>DaVinci Code</span>",
     description: "숫자 추리게임의 대명사! <br> 보드게임 입문자들의 필수코스!",
     difficulty: "Easy",
     players: "2-4인",
@@ -19,7 +19,7 @@ const gameData = {
     minPeople: "2",
   },
   rummikub: {
-    title: "루미큐브<span>Rummikub</span>",
+    title: "루미큐브<br><span>Rummikub</span>",
     description:
       "남녀노소 누구나 사랑하는 타일조합 손털기 게임! <br> 세계인의 게임 루미큐브!",
     difficulty: "Normal",
@@ -29,7 +29,7 @@ const gameData = {
     minPeople: "3",
   },
   uno: {
-    title: "우노<span>UNO</span>",
+    title: "우노<br><span>UNO</span>",
     description: "가족과 친구들이 즐길 수 있는 카드 게임",
     difficulty: "Easy",
     players: "2-10인",
@@ -38,7 +38,7 @@ const gameData = {
     minPeople: "3",
   },
   8282: {
-    title: "8282<span>8282</span>",
+    title: "8282<br><span>8282</span>",
     description:
       "2015년 판매량 1위에 빛나는 <br> 보석칩으로 카드를 사서 모으는 극강의 두뇌꿀잼게임",
     difficulty: "Hard",
@@ -57,7 +57,7 @@ const gameData = {
     minPeople: "4",
   },
   halligalli: {
-    title: "할리갈리<span>HalliGalli</span>",
+    title: "할리갈리<br><span>HalliGalli</span>",
     description:
       "남녀노소 누구나 사랑하는 타일조합 손털기 게임! <br> 세계인의 게임 루미큐브!",
     difficulty: "Normal",
@@ -67,7 +67,7 @@ const gameData = {
     minPeople: "5",
   },
   dalmuti: {
-    title: "달무티<span>Dalmuti</span>",
+    title: "달무티<br><span>Dalmuti</span>",
     description: "가족과 친구들이 즐길 수 있는 카드 게임",
     difficulty: "Easy",
     players: "2-10인",
@@ -76,7 +76,7 @@ const gameData = {
     minPeople: "5",
   },
   "exploding-kitten": {
-    title: "익스플로딩 키튼<span>Exploding Kitten</span>",
+    title: "익스플로딩 키튼<br><span>Exploding Kitten</span>",
     description:
       "2015년 판매량 1위에 빛나는 <br> 보석칩으로 카드를 사서 모으는 극강의 두뇌꿀잼게임",
     difficulty: "Hard",
@@ -86,7 +86,7 @@ const gameData = {
     minPeople: "5",
   },
   telestrations: {
-    title: "텔레스트레이션<span>Telestrations</span>",
+    title: "텔레스트레이션<br><span>Telestrations</span>",
     description: "숫자 추리게임의 대명사! <br> 보드게임 입문자들의 필수코스!",
     difficulty: "Easy",
     players: "2-4인",
@@ -95,7 +95,7 @@ const gameData = {
     minPeople: "6",
   },
   nothanks: {
-    title: "노땡스!<span>No Thanks!</span>",
+    title: "노땡스!<br><span>No Thanks!</span>",
     description:
       "남녀노소 누구나 사랑하는 타일조합 손털기 게임! <br> 세계인의 게임 루미큐브!",
     difficulty: "Normal",
@@ -105,7 +105,7 @@ const gameData = {
     minPeople: "6",
   },
   "modoo-marble": {
-    title: "모두의 마블<span>Modoo Marble</span>",
+    title: "모두의 마블<br><span>Modoo Marble</span>",
     description: "가족과 친구들이 즐길 수 있는 카드 게임",
     difficulty: "Easy",
     players: "2-10인",
@@ -114,7 +114,7 @@ const gameData = {
     minPeople: "7",
   },
   saboreur: {
-    title: "사보타지<span>Saboreur</span>",
+    title: "사보타지<br><span>Saboreur</span>",
     description:
       "2015년 판매량 1위에 빛나는 <br> 보석칩으로 카드를 사서 모으는 극강의 두뇌꿀잼게임",
     difficulty: "Hard",
@@ -124,7 +124,7 @@ const gameData = {
     minPeople: "7",
   },
   tako: {
-    title: "타코 캣 고트 치즈 피자<span>Taco Cat Goat Cheese Pizza</span>",
+    title: "타코 캣 고트 치즈 피자<br><span>Taco Cat Goat Cheese Pizza</span>",
     description: "숫자 추리게임의 대명사! <br> 보드게임 입문자들의 필수코스!",
     difficulty: "Easy",
     players: "2-4인",
@@ -133,7 +133,7 @@ const gameData = {
     minPeople: "8",
   },
   "kushi-express": {
-    title: "꼬치의 달인<span>Kushi Express</span>",
+    title: "꼬치의 달인<br><span>Kushi Express</span>",
     description:
       "남녀노소 누구나 사랑하는 타일조합 손털기 게임! <br> 세계인의 게임 루미큐브!",
     difficulty: "Normal",
@@ -143,7 +143,7 @@ const gameData = {
     minPeople: "8",
   },
   clue: {
-    title: "클루<span>Clue</span>",
+    title: "클루<br><span>Clue</span>",
     description: "가족과 친구들이 즐길 수 있는 카드 게임",
     difficulty: "Easy",
     players: "2-10인",
@@ -201,6 +201,22 @@ function showGameDetails(item, gameData, numItemsPerRow) {
   });
 }
 
+// people_count 버튼에 대한 이벤트 리스너
+document.querySelectorAll(".people_count").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const filter = event.target.getAttribute("data-filter");
+    filterByPlayers(filter);
+  });
+});
+
+// level 버튼에 대한 이벤트 리스너
+document.querySelectorAll(".level").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const level = event.target.getAttribute("data-filter");
+    filterByLevel(level);
+  });
+});
+
 // game선택했을때 아래나오는 위치, 개수 조정(반응형)
 document.querySelectorAll("#game-list li").forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -248,10 +264,10 @@ function updateGameList(gameKeys) {
 
   if (gameKeys.length === 0) {
     gameList.innerHTML = `
-          <p height = '500px';>
+          <p style = 'height: 500px'>
                 조건에 해당하는 보드게임이 없습니다.
             </p>`;
-      return;
+    return;
   }
 
   gameKeys.forEach((key) => {
@@ -267,8 +283,6 @@ function updateGameList(gameKeys) {
               `;
 
     gameList.appendChild(li);
-    gameList.style.display = "flex";
-    gameList.style.justifyContent = "center";
 
     // 게임 상세 정보를 표시하는 이벤트 리스너 다시 추가
     li.addEventListener("click", () => {
@@ -281,19 +295,3 @@ function updateGameList(gameKeys) {
     });
   });
 }
-
-// people_count 버튼에 대한 이벤트 리스너
-document.querySelectorAll(".people_count").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const filter = event.target.getAttribute("data-filter");
-    filterByPlayers(filter);
-  });
-});
-
-// level 버튼에 대한 이벤트 리스너
-document.querySelectorAll(".level").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const level = event.target.getAttribute("data-filter");
-    filterByLevel(level);
-  });
-});
