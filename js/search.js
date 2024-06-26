@@ -1,16 +1,16 @@
-const logoImage = document.querySelector('h1 > a > img');
+const logoImage = document.querySelector("h1 > a > img");
 function changeImageSource() {
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        logoImage.src = './img/logo_only.png';
-    } else {
-        logoImage.src = './img/logo.png';
-    }
-}
 
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    logoImage.src = "./img/logo_only.png";
+  } else {
+    logoImage.src = "";
+    logoImage.src = "./img/logo.png";
+  }
+}
 // 페이지 로드시 초기 호출
 changeImageSource();
 
-// 브라우저 창 크기 변경 시 이미지 변경
 window.addEventListener('resize', changeImageSource);
 
 let filterPeople = document.querySelectorAll('.people_count');
@@ -96,6 +96,7 @@ document.getElementById('header_search_bar').addEventListener('input', filterGam
   });
 }
 
+
 // made in GPT >> 검색바에서 게임명 검색
 document.querySelector('form[action="search"]').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -148,6 +149,7 @@ document.querySelector('form[action="search"]').addEventListener('submit', funct
       gameContainer.innerHTML = '<p>검색 결과가 없습니다.</p>';
   }
 });
+
 
 
 
