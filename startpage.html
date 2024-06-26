@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <!-- <script src="js/startpage.js"></script> -->
     <script>
-        function searchResult(){
-            
+        function searchResult() {
+
         }
     </script>
 </head>
+
 <body>
-
-<div id="logo">
-    <a href="https://www.naver.com/">   
-        <img src="/img/rollnplay_logo_top_white.png" alt="회사로고" class="logo">
-    </a>
-</div>
-  
-<div id="backGoundImg">
-    <div class="slide">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-
-
-
-<div id="searchArea">
-    <div id="allSearchArea">
-        <form action="search" method="post">
-            <!-- <div id="resultBtn">
-                <a href="https://www.naver.com/" class="resultBtn">하하
-                    
-                </a>
-            </div> -->
-            <input type="text" class="searchText" name="게임이름" placeholder="게임이름으로 검색" required autofocus>
-            <button type="submit" class="searchBtn" onclick="searchResult()">
-                <img src="/img/icon/search.png" alt="">
-            </button>
-             
-            
-                
-             
-        </form>
-        
+    <div id="logo">
+        <a href="main_page.html">
+            <img src="/img/rollnplay_logo_top_white.png" alt="회사로고" class="logo">
+        </a>
     </div>
 
-    
-    <div id="conditionSearchArea">
-        <a href="https://www.naver.com/" alt="상세검색페이지로 이동">♠ 인원별/장르별보드게임 찾기 ♠</a>
-        <!-- <input type="button" value="인원별/조건별보드게임 찾기"> -->
+    <div id="backGoundImg">
+        <div class="slide">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-</div>
-    
+
+    <div id="searchArea">
+        <div id="allSearchArea">
+            <form action="search" method="post">
+                <input type="text" class="searchText" name="게임이름" placeholder="게임이름으로 검색" required autofocus>
+                <button type="submit" class="searchBtn" onclick="searchResult()">
+                    <img src="/img/icon/search.png" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div id="conditionSearchArea">
+            <a href="main_page.html" alt="상세검색페이지로 이동">♠ 인원별/장르별보드게임 찾기 ♠</a>
+        </div>
+    </div>
+
 </body>
+
 </html>
