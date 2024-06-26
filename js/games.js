@@ -183,9 +183,14 @@ document.querySelectorAll('#game-list li').forEach((item, index) => {
     });
 });
 
+
 window.addEventListener('resize', () => {
     const existingDetails = document.querySelector('.game-details');
     if (existingDetails) {
         existingDetails.remove();
     }
 });
+
+
+
+
