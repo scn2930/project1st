@@ -14,10 +14,10 @@ body {
 }
 
 .wrapper {  
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 /* header */
@@ -25,7 +25,7 @@ header {
     width: 100%;
     height: 100px;
     margin-bottom: 25px;
-    background-color: beige;
+    background-color: #fff7dd;
 }
 
 .header_wrap {
@@ -50,7 +50,7 @@ header {
     height: 25px;
     margin-right: 1em;
     border: 1px solid #FFD755;
-    border-radius: 10px;
+    border-radius: 20px;
     outline: none;
 }
 
@@ -59,6 +59,7 @@ header {
     top: 8px;
     right: 1.8em;
     width: 15px;
+    cursor: pointer;
 }
 
 main {
@@ -96,7 +97,8 @@ main {
     cursor: pointer;
 }
 
-.select_people .people_count:hover {
+.select_people .people_count:hover,
+.select_people .people_count.active {
     background-color: #FFD755;
 }
 
@@ -124,7 +126,8 @@ main {
     cursor: pointer;
 }
 
-.select_level .level:hover {
+.select_level .level:hover,
+.select_level .level.active {
     background-color: #FFD755;
 }
 
@@ -142,85 +145,111 @@ main {
     width: 25%;
     text-align: center;
 }
-/* select 버튼 눌렀을때 js로 활성화 */
-.active{
-    background-color: #FFD755 !important;
-}
 
-.filter_layout{
-
-}
 
 /* games */
-.games {
-    padding: 0 100px;
+#game-list {
+    max-width: 1440px;
+    margin: 50px auto;
 }
 
-.game-row {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.game-card {
+li {
+    width: 24%;
+    height: auto;
+    float: left;
     text-align: center;
+    margin: 2.5% 0.5%;
     cursor: pointer;
+    position: relative;
 }
 
-.game-card img {
-    width: 300px;
-}
-
-.game-card p {
-    margin-top: 20px;
-    font-size: 20px;
+.game-card-title {
+    font-size: 1.3em;
     font-weight: 600;
     line-height: 29px;
-    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 5px;
 }
 
-.game-card p span {
-    font-size: 18px;
+.game-card-title span {
+    font-size: 0.8em;
     line-height: 27px;
     font-family: "Noto Sans KR", sans-serif;
     color: rgba(0, 0, 0, 0.75);
 }
 
+.game-card img {
+    width: 90%;
+    height: auto;
+}
+
 .game-details {
-    width: 100%;
-    height: 500px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    /* padding: 10px; */
+    height: auto;
     background-color: #fff7dd;
-    align-items: center;
-    margin-bottom: 20px;
+    padding: 50px;
+    display: none;
+    clear: both;
     position: relative;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.game-info {
     display: flex;
-    width: 70%;
-    height: 70%;
-    border-radius: 10px;
+    align-items: center;
 }
 
-.game-info img {
-    width: 300px;
-    height: 100%;
-    margin-left: -100px;
+.game-details h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.game-details h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFD755;
+}
+
+.game-details p {
+    margin-bottom: 5px;
+}
+
+.game-details img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: 15%;
+}
+
+.info {
+    margin: 5%;
+    flex: 1;
+}
+
+.info p:nth-child(2) {
+    font-size: 1.1em;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
+    font-size: 1.1em;
+    margin: 20px;
+}
+
+.info p strong {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.left {
+    float: left;
 }
 
 .close-btn {
-    width: 50px;
     position: absolute;
-    top: 20px;
-    left: 1200px;
+    top: 30px;
+    right: 30px;
     background-color: transparent;
     border: none;
     font-size: 20px;
@@ -231,96 +260,35 @@ main {
     width: 40px;
 }
 
-.left {
-    float: left;
-}
-
-.info {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-left: 100px;
-}
-
-.info h1 {
-    font-size: 34px;
-    font-weight: 600;
-}
-
-.info h1 span {
-    font-size: 20px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-    display: block;
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #FFD755;
-}
-
-.info p:nth-child(2) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.info p:nth-child(3), .info p:nth-child(4), .info p:nth-child(5) {
-    font-size: 20px;
-    margin: 20px;
-    margin-right: 10px;
-}
-
-.info p strong {
-    font-size: 22px;
-    font-weight: 600;
-}
-
 /* footer */
 footer {
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #FFD755;
+    margin: 0 auto;
 }
 
 .footer_wrap {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer_wrap ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer_wrap ul li {
-    float: left;
-}
-
-.footer_wrap ul li:nth-child(1) {
-    margin: 35px;
-    /* line-height: 100px; */
-}
-
-.footer_wrap ul li:nth-child(2) {
-    margin-top: 110px;
-    margin-left: 430px;
-    font-family: "Noto Sans KR", sans-serif;
+    width: 100%;
     text-align: center;
+    margin: 0 10px;
+    margin-top: 30px;
 }
-
-.footer_wrap ul li:nth-child(3) {
-    margin-left: 20px;
-    margin-top: 105px;
-}
-
-.footer_wrap ul li:nth-child(3) a img {
-    width: 30px;
-}
-
-.footer_wrap ul li:nth-child(4) {
-    margin-left: 10px;
-    margin-top: 105px;
-}
-
-.footer_wrap ul li:nth-child(4) a img {
-    width: 30px;
-}
-
-
 
 @media screen and (min-width: 500px) {
 
@@ -358,7 +326,6 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 768px) {
 
     .header_left {
@@ -372,7 +339,6 @@ footer {
     .header_right form input {
         height: 30px;
         margin-right: 2em;
-
     }
 
     .header_right form img {

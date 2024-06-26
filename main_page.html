@@ -20,19 +20,20 @@
         <!-- header start -->
         <header>
             <div class="header_wrap">
-                <div class="header_left">
-                    <h1>
-                        <a href="./index.html">
-                            <img src="" alt="로고">
-                        </a>
-                    </h1>
-                </div>
-                <div class="header_right">
-                    <form action="search" method="post">
-                        <input type="text" id="header_search_bar" name="board_name">
-                        <img src="./img/icon/search.png" alt="검색">
-                    </form>
-                </div>
+
+              <div class="header_left"  >
+                <h1>
+                  <a href="./main_page.html">
+                    <img src="" alt="로고">
+                  </a>
+                </h1>
+              </div>
+              <div class="header_right">
+                <form action="search" method="post">
+                  <input type="text" id="header_search_bar" name="board_name">
+                  <img src="./img/icon/search.png" alt="검색">
+                </form>
+              </div>
             </div>
         </header>
         <!-- header finish -->
@@ -78,100 +79,123 @@
             <!-- search finish -->
 
             <!-- games start -->
-            <section class="games_box">
-                <div class="games">
-                    <div class="game-card two normal strategy" data-game="splendor">
-                        <img src="img/game/splan.png" alt="Splendor">
-                        <p>스플렌더<br><span>Splendor</span></p>
-                    </div>
-                    <div class="game-card three normal guess" data-game="davinci-code">
-                        <img src="img/game/davinci.png" alt="DaVinci Code">
-                        <p>다빈치코드<br><span>DaVinci Code</span></p>
-                    </div>
-                    <div class="game-card four hard guess" data-game="rummikub">
-                        <img src="img/game/rumi.png" alt="Rummikub">
-                        <p>루미큐브<br><span>Rummikub</span></p>
-                    </div>
-                    <div class="game-card five hard card" data-game="uno">
-                        <img src="img/game/uno.png" alt="UNO">
-                        <p>우노<br><span>UNO</span></p>
-                    </div>
-                <div class="game-details" id="game-details-row-1"></div>
 
-                <div class="game-card six hard card" data-game="8282">
-                    <img src="img/game/8282.png" alt="8282">
-                    <p>8282<br><span>8282</span></p>
-                </div>
-                <div class="game-card seven easy family" data-game="hands-up">
-                    <img src="img/game/handsup.png" alt="HandsUp">
-                    <p>핸즈업<br><span>HandsUp</span></p>
-                </div>
-                <div class="game-card eight easy speed" data-game="halligalli">
-                    <img src="img/game/hali.png" alt="HalliGalli">
-                    <p>할리갈리<br><span>HalliGalli</span></p>
-                </div>
-                <div class="game-card eight hard puzzle" data-game="dalmuti">
-                    <img src="img/game/dalmuti.png" alt="Dalmuti">
-                    <p>달무티<br><span>Dalmuti</span></p>
-                </div>
-                <div class="game-details" id="game-details-row-2"></div>
+            <section>
+                <article class="games">
+                    <ul id="game-list">
+                        <li data-game="splendor">
+                            <div class="game-card">
+                                <img src="img/game/splan.png" alt="Splendor">
+                                <div class="game-card-title">스플렌더<br><span>Splendor</span></div>
+                            </div>
+                        </li>
+                        <li data-game="davinci-code">
+                            <div class="game-card">
+                                <img src="img/game/davinci.png" alt="DaVinci Code">
+                                <div class="game-card-title">다빈치코드<br><span>DaVinci Code</span></div>
+                            </div>
+                        </li>
+                        <li data-game="rummikub">
+                            <div class="game-card">
+                                <img src="img/game/rumi.png" alt="Rummikub">
+                                <div class="game-card-title">루미큐브<br><span>Rummikub</span></div>
+                            </div>
+                        </li>
+                        <li data-game="uno">
+                            <div class="game-card">
+                                <img src="img/game/uno.png" alt="UNO">
+                                <div class="game-card-title">우노<br><span>UNO</span></div>
+                            </div>
+                        </li>
+                        <li data-game="8282">
+                            <div class="game-card">
+                                <img src="img/game/8282.png" alt="8282">
+                                <div class="game-card-title">8282<br><span>8282</span></div>
+                            </div>
+                        </li>   
+                        <li data-game="hands-up">
+                            <div class="game-card">
+                                <img src="img/game/handsup.png" alt="HandsUp">
+                                <div class="game-card-title">핸즈업<br><span>HandsUp</span></div>
+                            </div>
+                        </li>
+                        <li data-game="halligalli">
+                            <div class="game-card">
+                                <img src="img/game/hali.png" alt="HalliGalli">
+                                <div class="game-card-title">할리갈리<br><span>HalliGalli</span></div>
+                            </div>
+                        </li>
+                        <li data-game="dalmuti">
+                            <div class="game-card">
+                                <img src="img/game/dalmuti.png" alt="Dalmuti">
+                                <div class="game-card-title">달무티<br><span>Dalmuti</span></div>
+                            </div>
+                        </li>
+                        <li data-game="exploding-kitten">
+                            <div class="game-card">
+                                <img src="img/game/kitten.png" alt="Exploding Kitten">
+                                <div class="game-card-title">익스플로딩 키튼<br><span>Exploding Kitten</span></div>
+                            </div>
+                        </li>
+                        <li data-game="telestrations">
+                            <div class="game-card">
+                                <img src="img/game/tele.png" alt="Telestrations">
+                                <div class="game-card-title">텔레스트레이션<br><span>Telestrations</span></div>
+                            </div>
+                        </li>
+                        <li data-game="nothanks">
+                            <div class="game-card">
+                                <img src="img/game/nothan.png" alt="No Thanks!">
+                                <div class="game-card-title">노땡스!<br><span>No Thanks!</span></div>
+                            </div>
+                        </li>
+                        <li data-game="modoo-marble">
+                            <div class="game-card">
+                                <img src="img/game/mar.png" alt="Modoo Marble">
+                                <div class="game-card-title">모두의 마블<br><span>Modoo Marble</span></div>
+                            </div>
+                        </li>
+                        <li data-game="saboreur">
+                            <div class="game-card">
+                                <img src="img/game/savo.png" alt="Saboreur">
+                                <div class="game-card-title">사보타지<br><span>Saboreur</span></div>
+                            </div>
+                        </li>
+                        <li data-game="tako">
+                            <div class="game-card">
+                                <img src="img/game/tako.png" alt="Taco Cat Goat Cheese Pizza">
+                                <div class="game-card-title">타코 캣 고트 치즈 피자<br><span>Taco Cat Goat Cheese Pizza</span></div>
+                            </div>
+                        </li>
+                        <li data-game="kushi-express">
+                            <div class="game-card">
+                                <img src="img/game/kushi.png" alt="Kushi Express">
+                                <div class="game-card-title">꼬치의 달인<br><span>Kushi Express</span></div>
+                            </div>
+                        </li>
+                        <li data-game="clue">
+                            <div class="game-card">
+                                <img src="img/game/clue.png" alt="Clue">
+                                <div class="game-card-title">클루<br><span>Clue</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
 
-
-                <div class="game-card seven normal family" data-game="exploding-kitten">
-                    <img src="img/game/kitten.png" alt="Exploding Kitten">
-                    <p>익스플로딩 키튼<br><span>Exploding Kitten</span></p>
-                </div>
-                <div class="game-card six easy family" data-game="telestrations">
-                    <img src="img/game/tele.png" alt="Telestrations">
-                    <p>텔레스트레이션<br><span>Telestrations</span></p>
-                </div>
-                <div class="game-card five normal mind" data-game="nothanks">
-                    <img src="img/game/nothan.png" alt="No Thanks!">
-                    <p>노땡스!<br><span>No Thanks!</span></p>
-                </div>
-                <div class="game-card four easy family" data-game="modoo-marble">
-                    <img src="img/game/mar.png" alt="Modoo Marble">
-                    <p>모두의 마블<br><span>Modoo Marble</span></p>
-                </div>
-
-                <div class="game-details" id="game-details-row-3"></div>
-
-
-                <div class="game-card three hard guess" data-game="saboreur">
-                    <img src="img/game/savo.png" alt="Saboreur">
-                    <p>사보타지<br><span>Saboreur</span></p>
-                </div>
-                <div class="game-card two easy puzzle" data-game="tako">
-                    <img src="img/game/tako.png" alt="Taco Cat Goat Cheese Pizza">
-                    <p>타코 캣 고트 치즈 피자<br><span>Taco Cat Goat Cheese Pizza</span></p>
-                </div>
-                <div class="game-card three normal speed" data-game="kushi-express">
-                    <img src="img/game/kushi.png" alt="Kushi Express">
-                    <p>꼬치의 달인<br><span>Kushi Express</span></p>
-                </div>
-                <div class="game-card five hard puzzle" data-game="clue">
-                    <img src="img/game/clue.png" alt="Clue">
-                    <p>클루<br><span>Clue</span></p>
-                </div>
-
-                <div class="game-details" id="game-details-row-4"></div>
-                </div>
-    </div>
-    </section>
-    </main>
-    </div>
-
-    <!-- footer start -->
-    <footer>
-        <div class="footer_wrap">
-            <ul class="clearfix">
-                <li><a href="#"><img src="img/logo_only_footer.png" alt="Footer Logo"></a></li>
-                <li>COPYRIGHT ⓒ Roll & Play co.,Ltd. All rights reserved.</li>
-                <li><a href="#"><img src="img/icon/facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="img/icon/insta.png" alt="Instagram"></a></li>
-            </ul>
-        </div>
-    </footer>
+        <!-- footer start -->
+        <footer>
+            <div class="footer_wrap">
+                <ul class="clearfix">
+                    <!-- <li><a href="#"><img src="img/logo_only_footer.png" alt="Footer Logo"></a></li> -->
+                    <li>COPYRIGHT ⓒ Roll & Play co.,Ltd. All rights reserved.</li>
+                    <!-- <li><a href="#"><img src="img/icon/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/icon/insta.png" alt="Instagram"></a></li> -->
+                </ul>
+            </div>
+        </footer>
+    </div>    
 
     <!-- js -->
     <script src="js/games.js" type="text/javascript"></script>
