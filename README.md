@@ -82,7 +82,7 @@
 
 ## 💻 구현 사항
 
-### 메인페이지(시작화면)
+### 메인 페이지(시작화면)
 <img src="https://github.com/user-attachments/assets/1807d5b1-1bd9-4e22-acbe-85af2cb6cb0a" alt="main"/>
 
 <br>
@@ -92,7 +92,7 @@
 
 <br>
 
-### 검색페이지
+### 검색 페이지
 <img  src="https://github.com/user-attachments/assets/d0d74a43-f40c-4255-97c9-018c672592dc" alt="search"/>
 <span><img width="45%" src="https://github.com/user-attachments/assets/0526618b-00f1-4269-a029-9aa2e1c0f85c" alt="search_person"/></span>
 <span><img width="45%" src="https://github.com/user-attachments/assets/fea869c3-90b7-4212-b5f7-7493b761a3f0" alt="search_level"/></span>
@@ -104,9 +104,19 @@
 
 <br>
 
+### 검색 기능
+<img  src="https://github.com/user-attachments/assets/f7f8823a-41ae-497e-b09b-75f0017a5682" alt="search_gif"/>
+
+
+- 게임 데이터들 중에서 검색한 내용을 포함하고 있는 모든 게임 리스트를 보여주는 filterGames 함수 생성
+- 메인 페이지에서 검색한 내용을 검색 페이지에서 URLSearchParams를 이용해 검색 키워드를 추출 후 filterGames 호출
+
+
+<br>
+
 ## 🧯 트러블 슈팅
 
-- 메인 페이지에서 검색하는 값을 검색 페이지로 보내는 문제 -> URLPARAMS이용
+- 메인 페이지에서 검색한 값을 검색 페이지로 보내는 문제 -> URLSearchParams 이용
 
 
 <br>
