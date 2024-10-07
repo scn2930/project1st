@@ -82,17 +82,32 @@
 
 ## 💻 구현 사항
 
-### [초기화면]
-- 서비스 접속 초기화면으로 splash 화면이 잠시 나온 뒤 다음 페이지가 나타납니다.
-    - 로그인이 되어 있지 않은 경우 : SNS 로그인 페이지
-    - 로그인이 되어 있는 경우 : README 홈 화면
-- SNS(카카오톡, 구글, 페이스북) 로그인 기능은 구현되어 있지 않습니다.
+### 메인페이지(시작화면)
+<img src="https://github.com/user-attachments/assets/1807d5b1-1bd9-4e22-acbe-85af2cb6cb0a" alt="main"/>
+
+<br>
+
+- 보드게임 검색을 할 수 있는 페이지입니다.
+- '인원별/장르별보드게임 찾기'를 Click하면 검색 페이지로 이동합니다.
+
+<br>
+
+### 검색페이지
+<img  src="https://github.com/user-attachments/assets/d0d74a43-f40c-4255-97c9-018c672592dc" alt="search"/>
+<span><img width="45%" src="https://github.com/user-attachments/assets/0526618b-00f1-4269-a029-9aa2e1c0f85c" alt="search_person"/></span>
+<span><img width="45%" src="https://github.com/user-attachments/assets/fea869c3-90b7-4212-b5f7-7493b761a3f0" alt="search_level"/></span>
+
+<br>
+
+- 인원 : 게임 인원수 데이터에 포함되는 게임들을 includes 메서드 사용해  filteredGames 배열에 저장
+- 난이도 : filteredGames에 있는 게임중에서 filter 메서드를 사용
 
 <br>
 
 ## 🧯 트러블 슈팅
 
-- [탭메뉴 프로필 버튼 이슈](https://github.com/likelion-project-README/README/wiki/README-8.%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_%ED%83%AD%EB%A9%94%EB%89%B4-%ED%94%84%EB%A1%9C%ED%95%84-%EB%B2%84%ED%8A%BC-%EC%9D%B4%EC%8A%88)
+- 메인 페이지에서 검색하는 값을 검색 페이지로 보내는 문제 -> URLPARAMS이용
+
 
 <br>
 
@@ -101,6 +116,7 @@
 - 필터 조건 중 '장르' 활성화
 - 반응형 좀 더 완벽
 - GitHub Branch 전략을 Main, Dev, Feat 등으로 구분해서 작업해보기
+- 필터 조건을 해제하려면 새로고침 해야하는 문제
 
 
 
