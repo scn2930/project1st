@@ -24,51 +24,11 @@
 
 <br>
 
-## 🪧 브랜치 전략
+## 👤 팀원 소개
 
-- 자신의 branch를 생성 후 main에 PR
-- PR 후에는 기존 branch 삭제 후 새로운 branch에서 작업
-
-<br>
-
-## 👤 팀원 구성 및 역할
-
-### 🦖 최재혁(PL)
-
-- **UI**
-    - 헤더, 검색 페이지 필터
-
-- **기능**
-    - 보드게임 검색 및 필터 기능
-
-- **기타**
-   - GitHub Repository 생성
-   - Git Branch 전략
-   
-<br>
-    
-### 🐬 김문정
-
-- **UI**
-    - 로고 제작
-    - 검색 페이지 게임 리스트 
-   
-- **기능**
-    - 보드게임 검색 및 필터링된 리스트 보여주기
-
-<br>
-
-### 🐥 조성재
-
-- **UI**
-    - 메인페이지
-
-- **기능**
-    - 애니메이션
-
-- **기타**
-   - 게임데이터 생성
-
+| 🦖 최재혁(PL) | 🐬 김문정 | 🐥 조성재 |
+| ------------ | ------ | ------ |
+| <a href="https://github.com/scn2930" target="_blank"><img src="https://github.com/user-attachments/assets/611de94d-0c84-47b7-b396-1a8ad2793544" width="150" height="150"></a> | <a href="https://github.com/segretoo" target="_blank"><img src="https://avatars.githubusercontent.com/u/171138574?v=4" width="150" height="150"></a> | <a href="https://github.com/gogumastick" target="_blank"><img src="https://avatars.githubusercontent.com/u/171139430?v=4" width="150" height="150"></a> |
 <br>
 
 ## 📅 프로젝트 일정
@@ -83,7 +43,7 @@
 ## 💻 구현 사항
 
 ### 메인 페이지(시작화면)
-<img src="https://github.com/user-attachments/assets/1807d5b1-1bd9-4e22-acbe-85af2cb6cb0a" alt="main"/>
+<a><img src="https://github.com/user-attachments/assets/1807d5b1-1bd9-4e22-acbe-85af2cb6cb0a" alt="main"/></a>
 
 <br>
 
@@ -93,7 +53,7 @@
 <br>
 
 ### 검색 페이지
-<img  src="https://github.com/user-attachments/assets/d0d74a43-f40c-4255-97c9-018c672592dc" alt="search"/>
+<a><img src="https://github.com/user-attachments/assets/d0d74a43-f40c-4255-97c9-018c672592dc" alt="search"/></a>
 <span><img width="45%" src="https://github.com/user-attachments/assets/0526618b-00f1-4269-a029-9aa2e1c0f85c" alt="search_person"/></span>
 <span><img width="45%" src="https://github.com/user-attachments/assets/fea869c3-90b7-4212-b5f7-7493b761a3f0" alt="search_level"/></span>
 
@@ -105,28 +65,11 @@
 <br>
 
 ### 검색 기능
-<img  src="https://github.com/user-attachments/assets/f7f8823a-41ae-497e-b09b-75f0017a5682" alt="search_gif"/>
+<a><img src="https://github.com/user-attachments/assets/f7f8823a-41ae-497e-b09b-75f0017a5682" alt="search_gif"/></a>
 
 
 - 게임 데이터들 중에서 검색한 내용을 포함하고 있는 모든 게임 리스트를 보여주는 filterGames 함수 생성
 - 메인 페이지에서 검색한 내용을 검색 페이지에서 URLSearchParams를 이용해 검색 키워드를 추출 후 filterGames 호출
-
-
-<br>
-
-## 🧯 트러블 슈팅
-
-- 메인 페이지에서 검색한 값을 검색 페이지로 보내는 문제 -> URLSearchParams 이용
-
-
-<br>
-
-## 🔧 개선 목표
-
-- 필터 조건 중 '장르' 활성화
-- 반응형 좀 더 완벽
-- GitHub Branch 전략을 Main, Dev, Feat 등으로 구분해서 작업해보기
-- 필터 조건을 해제하려면 새로고침 해야하는 문제
 
 
 
