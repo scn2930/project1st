@@ -3,10 +3,6 @@
 
 <br>
 
-- 배포 URL : http://sikpark.dothome.co.kr/project1st/index.html
-
-<br>
-
 ## ❓ 프로젝트 소개
 
 - 보드게임이 처음이거나 새로운 게임을 하고 싶을 때, 게임을 검색하거나 추천해주는 서비스입니다.
@@ -37,6 +33,11 @@
 - UI 설계 : 2024-06-19 ~ 2024-06-20
 - 기능 구현 : 2024-06-20 ~ 2024-06-26
 - 발표 및 시연 : 2024-06-27
+
+<br>
+
+## 🔗 링크
+http://sikpark.dothome.co.kr/project1st/index.html
 
 <br>
 
